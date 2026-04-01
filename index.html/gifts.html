@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Special Messages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fff2e6;
+    }
+
+    h1 {
+      color: #f08a5d;
+      text-align: center;
+    }
+
+    #message-container p {
+      background: #ffe0b3;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Special Messages</h1>
+  <div id="message-container"></div>
+
+  <script>
+    const messages = [
+      "I’m so grateful to have you in my life!",
+      "Distance may separate us, but your support feels so close.",
+      "Your love has always reached me, no matter where you are."
+    ];
+
+    const container = document.getElementById("message-container");
+
+    messages.forEach(msg => {
+      const p = document.createElement("p");
+      p.textContent = msg;
+      container.appendChild(p);
+    });
+  </script>
+</body>
+</html>
